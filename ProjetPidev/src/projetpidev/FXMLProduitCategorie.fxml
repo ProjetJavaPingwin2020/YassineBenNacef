@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetpidev.FXMLProduitCategorieController">
+   <children>
+      <Text layoutX="29.0" layoutY="52.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="HuntKingdom" wrappingWidth="591.31640625">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="159.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="®">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Line endX="1024.0" fill="#005a19" layoutX="10.0" layoutY="79.0" opacity="0.2" startX="-5.0" stroke="#005a19" strokeWidth="1.25">
+         <effect>
+            <Blend opacity="0.0" />
+         </effect>
+      </Line>
+      <Line endX="1024.0" fill="#005a19" layoutX="8.0" layoutY="139.0" opacity="0.2" startX="-5.0" stroke="#005a19" strokeWidth="1.25">
+         <effect>
+            <Blend opacity="0.0" />
+         </effect>
+      </Line>
+      <ImageView fx:id="notif_empty" fitHeight="38.0" fitWidth="52.0" layoutX="781.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Notif_empty.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="notif_1" fitHeight="38.0" fitWidth="52.0" layoutX="781.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/Notif_1.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="1.0" layoutY="78.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="1037.0">
+         <children>
+            <Button fx:id="BouttonProduit" layoutX="78.0" layoutY="19.0" mnemonicParsing="false" onAction="#products" text="Gestion Produits" />
+            <Button fx:id="BouttonCategorie" layoutX="313.0" layoutY="19.0" mnemonicParsing="false" onAction="#Categorie" text="Gestion Catégories" />
+            <Button fx:id="BouttonCommande" layoutX="577.0" layoutY="19.0" mnemonicParsing="false" onAction="#Commande" text="Gestion Commandes" />
+            <Button fx:id="BouttonRating" layoutX="835.0" layoutY="19.0" mnemonicParsing="false" onAction="#rating" text="Rating des Produits" />
+         </children>
+      </Pane>
+      <Pane fx:id="Produit" layoutX="-4.0" layoutY="140.0" prefHeight="458.0" prefWidth="1037.0" visible="false">
+         <children>
+            <Text layoutX="800.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des Produits">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nom_prod" layoutX="168.0" layoutY="46.0" prefHeight="26.0" prefWidth="140.0" style="-fx-border-color: #00000;" />
+            <Label layoutX="27.0" layoutY="48.0" text="Nom du Produit: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="RED" layoutX="131.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Text fill="RED" layoutX="118.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Label layoutX="43.0" layoutY="97.0" text="Description:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="description_prod" layoutX="168.0" layoutY="94.0" prefHeight="26.0" prefWidth="140.0" style="-fx-border-color: #00000;" />
+            <Text fill="RED" layoutX="149.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Label layoutX="6.0" layoutY="149.0" prefHeight="20.0" prefWidth="149.0" text="  Catégorie du Produit: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="categorie_prod" layoutX="168.0" layoutY="145.0" prefHeight="25.0" prefWidth="140.0" />
+            <TextField fx:id="quantite_prod" layoutX="168.0" layoutY="196.0" prefHeight="26.0" prefWidth="140.0" style="-fx-border-color: #00000;" />
+            <Label layoutX="43.0" layoutY="199.0" text="Quantité:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="RED" layoutX="105.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Label layoutX="38.0" layoutY="246.0" text="Prix Unitaire:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="RED" layoutX="120.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <TextField fx:id="prix_prod" layoutX="168.0" layoutY="250.0" prefHeight="26.0" prefWidth="140.0" style="-fx-border-color: #00000;" />
+            <Button fx:id="AjoutProduitBoutton" layoutX="113.0" layoutY="355.0" mnemonicParsing="false" onAction="#addProduit" text="Ajouter le Produit" />
+            <Text layoutX="388.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Détails du Produit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imageView" fitHeight="160.0" fitWidth="205.0" layoutX="351.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="361.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du Produit :" wrappingWidth="101.322265625" />
+            <Text layoutX="361.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Unitaire :" wrappingWidth="101.322265625" />
+            <Text layoutX="361.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock disponible :" wrappingWidth="101.322265625" />
+            <Text layoutX="361.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description du Produit :" />
+            <TextField fx:id="filechoose" layoutX="31.0" layoutY="296.0" />
+            <Button fx:id="chooser" layoutX="210.0" layoutY="296.0" mnemonicParsing="false" onAction="#image" text="choose" />
+            <Text fx:id="text_nom" layoutX="464.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="148.5078125" />
+            <Text fx:id="text_prix" layoutX="444.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="77.7724609375" />
+            <Text fx:id="text_quantite" layoutX="462.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="77.7724609375" />
+            <Text fx:id="text_description" layoutX="360.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="250.0" />
+            <TableView fx:id="ListeProduit" layoutX="616.0" layoutY="44.0" prefHeight="393.0" prefWidth="412.0">
+              <columns>
+                <TableColumn fx:id="nom_prod1" prefWidth="75.0" text="Nom " />
+                <TableColumn fx:id="categorie_prod2" prefWidth="75.0" text="Catégorie" />
+                  <TableColumn fx:id="prix_prod2" prefWidth="75.0" text="Prix" />
+                  <TableColumn fx:id="quantite_prod2" prefWidth="75.0" text="Quantité" />
+                  <TableColumn fx:id="image2" prefWidth="75.0" text="Image" />
+              </columns>
+            </TableView>
+            <Button fx:id="detail" layoutX="402.0" layoutY="355.0" mnemonicParsing="false" text="Détails" />
+            <Button fx:id="edit" layoutX="112.0" layoutY="387.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="111.0" text="Modifier le Produit" />
+            <Button fx:id="delete" layoutX="112.0" layoutY="419.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="111.0" text="Supprimer le Produit" />
+            <Text fx:id="produit_id" layoutX="519.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+         </children>
+      </Pane>
+      <Pane fx:id="Categorie" layoutX="6.0" layoutY="150.0" prefHeight="458.0" prefWidth="1037.0" visible="false">
+         <children>
+            <TableView fx:id="liste_categories" layoutX="639.0" layoutY="43.0" prefHeight="331.0" prefWidth="376.0">
+               <columns>
+                  <TableColumn fx:id="nom_categorie1" prefWidth="146.0" text="Nom Catégorie" />
+                  <TableColumn fx:id="description_categorie1" minWidth="0.0" prefWidth="229.0" text="Description de la Catégorie" />
+               </columns>
+            </TableView>
+            <Text layoutX="756.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des Catégories">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nom_categorie" layoutX="168.0" layoutY="69.0" prefHeight="26.0" prefWidth="140.0" style="-fx-border-color: #00000;" />
+            <Label layoutX="27.0" layoutY="71.0" text="Nom Catégorie: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="RED" layoutX="131.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Text fill="RED" layoutX="118.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Label layoutX="43.0" layoutY="120.0" text="Description:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="description_categorie" layoutX="168.0" layoutY="117.0" prefHeight="26.0" prefWidth="140.0" style="-fx-border-color: #00000;" />
+            <Button layoutX="114.0" layoutY="167.0" mnemonicParsing="false" onAction="#addCategorie" text="Ajouter la Catégorie" />
+            <Button fx:id="edit_categorie" layoutX="760.0" layoutY="387.0" mnemonicParsing="false" onAction="#Edit_cat" prefHeight="25.0" prefWidth="155.0" text="Modifier cette Catégorie" />
+            <Button fx:id="deletec" layoutX="760.0" layoutY="419.0" mnemonicParsing="false" onAction="#SupprimerCat" text="Supprimer cette Catégorie" />
+         </children>
+      </Pane>
+      <Pane fx:id="Commande" layoutX="1.0" layoutY="140.0" prefHeight="458.0" prefWidth="1037.0">
+         <children>
+            <TableView fx:id="liste_commande" layoutX="62.0" layoutY="51.0" prefHeight="331.0" prefWidth="914.0">
+               <columns>
+                  <TableColumn fx:id="client_commande" prefWidth="121.0" text="Nom Client" />
+                  <TableColumn fx:id="imagecommande" minWidth="0.0" prefWidth="141.0" />
+                  <TableColumn fx:id="produit_commande" minWidth="0.0" prefWidth="141.0" text="Nom Produit" />
+                  <TableColumn fx:id="quantite_commande" minWidth="0.0" prefWidth="149.0" text="Quantité Commande" />
+                  <TableColumn fx:id="prixtotal_commande" minWidth="0.0" prefWidth="118.0" text="Prix Total" />
+                  <TableColumn fx:id="etat_commande" minWidth="0.0" prefWidth="130.0" text="Etat " />
+                  <TableColumn fx:id="paye_commande" minWidth="0.0" prefWidth="111.0" text="Payée ?" />
+               </columns>
+            </TableView>
+            <Text layoutX="441.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des Commandes" wrappingWidth="155.265625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="valider" layoutX="441.0" layoutY="395.0" mnemonicParsing="false" onAction="#Valider" prefHeight="25.0" prefWidth="155.0" text="Valider la Commande" />
+            <Button fx:id="refuser" layoutX="442.0" layoutY="428.0" mnemonicParsing="false" onAction="#Refuser" prefHeight="25.0" prefWidth="155.0" text="Refuser la Commande" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_rating" layoutX="11.0" layoutY="150.0" prefHeight="458.0" prefWidth="1037.0" visible="false">
+         <children>
+            <TableView fx:id="liste_rating" layoutX="62.0" layoutY="51.0" prefHeight="366.0" prefWidth="914.0">
+               <columns>
+                  <TableColumn fx:id="client_rating" prefWidth="121.0" text="Nom Client" />
+                  <TableColumn fx:id="image_rating" minWidth="0.0" prefWidth="141.0" />
+                  <TableColumn fx:id="produit_rating" minWidth="0.0" prefWidth="190.0" text="Nom Produit" />
+                  <TableColumn fx:id="degre_rating" minWidth="0.0" prefWidth="210.0" text="Degré de Satisfaction" />
+                  <TableColumn fx:id="commentaire_rating" minWidth="0.0" prefWidth="251.0" text="Commentaire" />
+               </columns>
+            </TableView>
+            <Text layoutX="460.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des Ratings" wrappingWidth="155.265625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="revenu_dujour" layoutX="852.0" layoutY="27.0" mnemonicParsing="false" onAction="#reset_revenu" text="Revenus du jour" />
+   </children>
+</AnchorPane>

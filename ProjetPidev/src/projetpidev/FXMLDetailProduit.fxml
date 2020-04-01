@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetpidev.FXMLDetailProduitController">
+   <children>
+      <Button fx:id="commande" layoutX="299.0" layoutY="450.0" mnemonicParsing="false" onAction="#ajouter_commande" text="Passer Votre Commande" />
+      <Text fx:id="description" layoutX="203.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="250.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_quantite" layoutX="165.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="77.7724609375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="prix" layoutX="131.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="77.7724609375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nom" layoutX="155.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="148.5078125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description du Produit :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="quantite2" layoutX="45.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock disponible :" wrappingWidth="146.2138671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Unitaire :" wrappingWidth="101.322265625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du Produit :" wrappingWidth="101.322265625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imageView" fitHeight="180.0" fitWidth="197.0" layoutX="264.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../hache.jpg" />
+         </image></ImageView>
+      <Text layoutX="299.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Détail Du Produit" wrappingWidth="111.408203125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité souhaitée :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="quantite" layoutX="180.0" layoutY="372.0" />
+      <Text fx:id="id" layoutX="558.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" visible="false" />
+      <Button fx:id="rate" layoutX="318.0" layoutY="481.0" mnemonicParsing="false" onAction="#ajouter_rating" text="Evaluer le Produit" />
+      <Text layoutX="411.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluer le Produit :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="Rating" layoutX="531.0" layoutY="268.0" prefWidth="150.0" />
+      <Text layoutX="465.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laissez un commentaire :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="commentaire" layoutX="468.0" layoutY="332.0" prefHeight="91.0" prefWidth="149.0" />
+      <Line endX="120.0" layoutX="330.0" layoutY="350.0" rotate="90.0" startX="-30.0" />
+      <Button fx:id="pro" layoutX="572.0" layoutY="11.0" mnemonicParsing="false" onAction="#Pro" prefHeight="25.0" prefWidth="124.0" text="Retour aux Produits" />
+   </children>
+</AnchorPane>

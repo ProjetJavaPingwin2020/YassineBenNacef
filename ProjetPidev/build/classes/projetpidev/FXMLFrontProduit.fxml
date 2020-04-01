@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetpidev.FXMLFrontProduitController">
+   <children>
+      <Text layoutX="169.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="®">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="62.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="HuntKingdom" wrappingWidth="591.31640625">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+      </Text>
+      <Pane layoutY="84.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="1037.0">
+         <children>
+            <Button fx:id="Chasse" layoutX="164.0" layoutY="19.0" mnemonicParsing="false" onAction="#chasse" text="Nos Produits Chasse" />
+            <Button fx:id="Peche" layoutX="681.0" layoutY="19.0" mnemonicParsing="false" onAction="#peche" text="Nos Produits Pêche" />
+         </children>
+      </Pane>
+      <Line endX="1024.0" fill="#005a19" layoutX="5.0" layoutY="149.0" opacity="0.2" startX="-5.0" stroke="#005a19" strokeWidth="1.25">
+         <effect>
+            <Blend opacity="0.0" />
+         </effect>
+      </Line>
+      <Line endX="1024.0" fill="#005a19" layoutX="7.0" layoutY="89.0" opacity="0.2" startX="-5.0" stroke="#005a19" strokeWidth="1.25">
+         <effect>
+            <Blend opacity="0.0" />
+         </effect>
+      </Line>
+      <Pane fx:id="pane_chasse" layoutX="1.0" layoutY="191.0" prefHeight="410.0" prefWidth="1037.0">
+         <children>
+            <TableView fx:id="chasse" layoutX="172.0" layoutY="4.0" prefHeight="342.0" prefWidth="678.0">
+              <columns>
+                <TableColumn fx:id="image" prefWidth="108.0" />
+                <TableColumn fx:id="nom" prefWidth="121.0" text="Nom Produit" />
+                  <TableColumn fx:id="description" prefWidth="200.0" text="Description Du Produit" />
+                  <TableColumn fx:id="prix" prefWidth="112.0" text="Prix" />
+                  <TableColumn fx:id="rating" prefWidth="136.0" text="Rating" />
+              </columns>
+            </TableView>
+            <Button fx:id="commande" layoutX="436.0" layoutY="362.0" mnemonicParsing="false" onAction="#commande" prefHeight="25.0" prefWidth="139.0" text="Plus de Détails" />
+         </children>
+      </Pane>
+      <Text fontSmoothingType="LCD" layoutX="429.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos Produits en Stock">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+      <Pane fx:id="pane_peche" layoutX="1.0" layoutY="187.0" prefHeight="410.0" prefWidth="1037.0" visible="false">
+         <children>
+            <TableView fx:id="peche" layoutX="172.0" layoutY="4.0" prefHeight="342.0" prefWidth="678.0">
+               <columns>
+                  <TableColumn fx:id="image1" prefWidth="108.0" />
+                  <TableColumn fx:id="nom1" prefWidth="121.0" text="Nom Produit" />
+                  <TableColumn fx:id="description1" prefWidth="200.0" text="Description Du Produit" />
+                  <TableColumn fx:id="prix1" prefWidth="112.0" text="Prix" />
+                  <TableColumn fx:id="rating1" prefWidth="136.0" text="Rating" />
+               </columns>
+            </TableView>
+            <Button fx:id="commande1" layoutX="435.0" layoutY="366.0" mnemonicParsing="false" onAction="#commande" prefHeight="25.0" prefWidth="139.0" text="Plus de Détails" />
+         </children>
+      </Pane>
+      <Text layoutX="665.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre nom d'Utilisateur est :" />
+      <Text fx:id="username" layoutX="820.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button fx:id="panier" layoutX="934.0" layoutY="42.0" mnemonicParsing="false" onAction="#panier" text="Votre Panier" />
+   </children>
+</AnchorPane>

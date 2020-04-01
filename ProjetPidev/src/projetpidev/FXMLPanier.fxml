@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetpidev.FXMLPanierController">
+   <children>
+      <Text fx:id="username" layoutX="830.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="675.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre nom d'Utilisateur est :" />
+      <Line endX="1024.0" fill="#005a19" layoutX="17.0" layoutY="99.0" opacity="0.2" startX="-5.0" stroke="#005a19" strokeWidth="1.25">
+         <effect>
+            <Blend opacity="0.0" />
+         </effect>
+      </Line>
+      <Line endX="1024.0" fill="#005a19" layoutX="15.0" layoutY="159.0" opacity="0.2" startX="-5.0" stroke="#005a19" strokeWidth="1.25">
+         <effect>
+            <Blend opacity="0.0" />
+         </effect>
+      </Line>
+      <Pane layoutX="10.0" layoutY="94.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="1037.0" />
+      <Text layoutX="49.0" layoutY="72.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="HuntKingdom" wrappingWidth="591.31640625">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+      </Text>
+      <TableView fx:id="liste_commande" layoutX="77.0" layoutY="205.0" prefHeight="331.0" prefWidth="796.0">
+         <columns>
+            <TableColumn fx:id="imagecommande" minWidth="0.0" prefWidth="141.0" />
+            <TableColumn fx:id="produit_commande" minWidth="0.0" prefWidth="141.0" text="Nom Produit" />
+            <TableColumn fx:id="quantite_commande" minWidth="0.0" prefWidth="149.0" text="Quantité Commande" />
+            <TableColumn fx:id="prixtotal_commande" minWidth="0.0" prefWidth="118.0" text="Prix Total" />
+            <TableColumn fx:id="etat_commande" minWidth="0.0" prefWidth="130.0" text="Etat " />
+            <TableColumn fx:id="paye_commande" minWidth="0.0" prefWidth="111.0" text="Payée ?" />
+         </columns>
+      </TableView>
+      <Text layoutX="83.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre Panier" wrappingWidth="155.265625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="785.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Produits: " />
+      <Text fx:id="nb_prod" layoutX="870.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="903.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produits" />
+      <Text layoutX="785.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Total" />
+      <Text fx:id="total" layoutX="841.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="908.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinars" />
+      <Button fx:id="edit" layoutX="370.0" layoutY="555.0" mnemonicParsing="false" onAction="#edit" text="Modifier La Commande" />
+      <Text fx:id="new_quantite" layoutX="906.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrez la nouvelle Qantité Souhaitée" visible="false" wrappingWidth="98.13671875" />
+      <TextField fx:id="quantite_new" layoutX="908.0" layoutY="320.0" prefHeight="25.0" prefWidth="98.0" visible="false" />
+      <Button fx:id="confirmer" layoutX="921.0" layoutY="352.0" mnemonicParsing="false" onAction="#confirmer" text="Confirmer" visible="false" />
+      <Text fx:id="id_commande" layoutX="967.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Button fx:id="supprimer" layoutX="563.0" layoutY="555.0" mnemonicParsing="false" onAction="#Supprimer" text="Supprimer La Commande" />
+      <Button fx:id="pro" layoutX="897.0" layoutY="52.0" mnemonicParsing="false" onAction="#Pro" text="Retour aux Produits" />
+      <Button fx:id="payer" layoutX="175.0" layoutY="555.0" mnemonicParsing="false" onAction="#Payer" prefHeight="25.0" prefWidth="141.0" text="Payer La Commande" />
+   </children>
+</AnchorPane>

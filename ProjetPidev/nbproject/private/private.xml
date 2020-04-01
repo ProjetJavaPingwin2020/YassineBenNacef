@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLLoginController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLProduitCategorieController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLEditCController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLPanier.fxml</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLDetailProduitController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Services/UserService.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Services/ProduitCategorieService.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Entity/FosUser.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Services/CommandeService.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/utils/SendSMS.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Entity/Rating.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLRegisteryassine.fxml</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Entity/Produit.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Entity/Commande.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLRegisteryassineController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLFrontProduitController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/utils/MailSend.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/ProjetPidev.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLRegisterController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/Services/RatingService.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLPanierController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/DetailsCommandePayController.java</file>
+            <file>file:/C:/Users/Yassiine/Desktop/Pidev%20Java/ProjetPidev/src/projetpidev/FXMLDetailProduit.fxml</file>
+        </group>
+    </open-files>
+</project-private>
